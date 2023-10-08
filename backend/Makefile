@@ -1,5 +1,8 @@
+dev: node_modules
+	npx tsx src
+
 start: compile
-	npx tsx src/index.ts
+	npm $@
 
 compile: node_modules
 	npm run $@

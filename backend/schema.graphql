@@ -1,0 +1,23 @@
+type Mutation {
+    register(email: String!, password: String!): AuthPayload!
+    login(email: String!, password: String!): AuthPayload!
+}
+
+type Query {
+    checkAuth: CheckAuthPayload!
+    users: [User]
+    # secrets: [Secret]
+}
+
+type AuthPayload {
+    token: String!
+}
+
+type CheckAuthPayload {
+    isAuthenticated: Boolean
+}
+
+type User {
+    email: String!
+}
+
