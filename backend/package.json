@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@apollo/server": "4.9.4",
-    "graphql": "16.8.1"
+    "graphql": "16.8.1",
+    "lowdb": "6.1.0"
   }
 }

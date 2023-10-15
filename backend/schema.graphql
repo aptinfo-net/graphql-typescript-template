@@ -7,6 +7,8 @@ type Query {
     checkAuth: CheckAuthPayload!
     users: [User]
     # secrets: [Secret]
+
+    sensors: [Sensor]
 }
 
 type AuthPayload {
@@ -19,5 +21,10 @@ type CheckAuthPayload {
 
 type User {
     email: String!
+}
+
+type Sensor {
+    type: String
+    host: String
 }
 
